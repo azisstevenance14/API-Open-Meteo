@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Cuaca Real-Time</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- HEADER WAKTU REAL-TIME -->
+        <header class="time-header">
+            <h2 id="live-date">Memuat Tanggal...</h2>
+            <h1 id="live-time">00:00:00</h1>
+            <p class="location-tag">📍 Lokasi: Gorontalo, Indonesia</p>
+        </header>
+
+        <!-- STATUS LOADING & ERROR -->
+        <div id="status-message" class="status">Mengambil data cuaca...</div>
+
+        <!-- GRID KARTU CUACA (WEATHER CARDS) -->
+        <main class="cards-grid" id="weather-cards" style="display: none;">
+            
+            <!-- Card 1: Suhu Udara -->
+            <div class="card">
+                <div class="card-icon">🌡️</div>
+                <div class="card-title">Suhu Udara</div>
+                <div class="card-value" id="temp-val">--</div>
+                <div class="card-unit">Derajat Celsius (°C)</div>
+            </div>
+
+            <!-- Card 2: Kelembapan -->
+            <div class="card">
+                <div class="card-icon">💧</div>
+                <div class="card-title">Kelembapan Udara</div>
+                <div class="card-value" id="humidity-val">--</div>
+                <div class="card-unit">Persentase (%)</div>
+            </div>
+
+            <!-- Card 3: Kecepatan Angin -->
+            <div class="card">
+                <div class="card-icon">💨</div>
+                <div class="card-title">Kecepatan Angin</div>
+                <div class="card-value" id="wind-val">--</div>
+                <div class="card-unit">Kilometer per Jam (km/h)</div>
+            </div>
+
+            <!-- Card 4: Indeks UV -->
+            <div class="card">
+                <div class="card-icon">☀️</div>
+                <div class="card-title">Indeks UV</div>
+                <div class="card-value" id="uv-val">--</div>
+                <div class="card-unit">Tingkat Paparan Sinar Matahari</div>
+            </div>
+
+            <!-- Card 5: Kondisi / Kode Cuaca -->
+            <div class="card">
+                <div class="card-icon">🌤️</div>
+                <div class="card-title">Kondisi Cuaca</div>
+                <div class="card-value" id="weather-desc">--</div>
+                <div class="card-unit" id="weather-code-tag">Kode Cuaca</div>
+            </div>
+
+            <!-- Card 6: Tekanan Udara -->
+            <div class="card">
+                <div class="card-icon">⏲️</div>
+                <div class="card-title">Tekanan Udara</div>
+                <div class="card-value" id="pressure-val">--</div>
+                <div class="card-unit">Hectopascal (hPa)</div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
