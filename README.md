@@ -52,22 +52,6 @@ Penyedia Data: Open-Meteo API (REST API gratis tanpa perlu API key)
 └── README.md        # Dokumentasi project
 
 
-⚙️ Cara Menjalankan Project Secara Lokal
-
-Clone Repository (atau buka folder lokalmu):
-
-git clone https://github.com/username-kamu/weather-dashboard-gorontalo.git
-cd weather-dashboard-gorontalo
-
-
-Buka di VS Code:
-
-code .
-
-
-Jalankan Aplikasi:
-
-Buka file index.html menggunakan ekstensi Live Server di VS Code, atau cukup klik dua kali pada file index.html untuk membukanya di browser favoritmu.
 
 🌐 Detail Endpoint API
 
@@ -75,9 +59,3 @@ Aplikasi ini mengirimkan permintaan data ke API Open-Meteo menggunakan koordinat
 
 GET https://api.open-meteo.com/v1/forecast?latitude=0.5434&longitude=123.0595&current=temperature_2m,relative_humidity_2m,surface_pressure,wind_speed_10m,weather_code,uv_index&timezone=auto
 
-
-📝 Lisensi
-
-Project ini dilindungi di bawah lisensi MIT.
-
-Dibuat dengan semangat belajar oleh Developer Indonesia 🚀☕
